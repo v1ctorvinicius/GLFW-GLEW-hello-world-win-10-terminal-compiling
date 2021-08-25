@@ -20,7 +20,7 @@ Read "build commands" for more information
 3. inside the .zip file are the **"include"** and **"lib-mingw"** folders. Inside **"include"** are the header files, and inside **"lib-mingw"** are the dll and lib files that need to be specified in the command line  
 4. create a folder in your computer called **"OpenGL"** and extract these two folders (**"include"** and **"lib-mingw"**) into it  
 5. rename **"lib-mingw"** to **"lib"**  
-6. int **"OpenGl"** folder, create a C file named **"main.c"** and paste the [example code](https://www.glfw.org/documentation) into it  
+6. in the **"OpenGl"** folder, create a C file named **"main.c"** and paste the [example code](https://www.glfw.org/documentation) into it  
 7. open the windows terminal inside this folder and run ```gcc main.c -o main.exe -I "include" -L "lib" -lglfw3 -lglfw3dll -lopengl32 -lgdi32```  
 8. you must now be seeing a window
 9. to setup **GLEW** library you need to download the windows binaries from [Glew download page](http://glew.sourceforge.net/)
