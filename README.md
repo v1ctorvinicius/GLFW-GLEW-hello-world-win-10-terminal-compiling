@@ -43,7 +43,7 @@ if(glewInit() != GLEW_OK){
 17. now Glew must initiate with no errors, go to the terminal and compile with:   
 ```gcc -D GLEW_STATIC main.c -o ../main.exe -I "../dependencies/include" -L "../dependencies/lib" -lglfw3 -lglfw3dll -lopengl32 -lgdi32 -lUser32 -lShell32 -lglew32s -lglu32 -lkernel32 -lOpengl32```  
 
-18. run main.exe, if the window appears, and we don't receive that error message from ```glewInit()```, it means we're good to go and write some opengl code
+18. run main.exe, if the window appears, and we don't receive that error message from ```glewInit()``` in the console, it means we're good to go and write some opengl code
 19. in your main.c file, find these lines: 
 ```c
 /* Render here */
