@@ -17,7 +17,7 @@ Read "build commands" for more information
   
 1. download and install mingw64 and run in terminal ```gcc --version``` to see if it is working properly  
 2. download GLFW 32-bit Windows pre-compiled binaries from [Glfw download page](https://www.glfw.org/download.html)  
-3. in the .zip file are found the **"include"** and **"lib-mingw"** folders. Inside **"include"** are the header files, and inside **"lib-mingw"** are the dll and lib files that need to be specified in the command line  
+3. inside the .zip file are the **"include"** and **"lib-mingw"** folders. Inside **"include"** are the header files, and inside **"lib-mingw"** are the dll and lib files that need to be specified in the command line  
 4. create a folder in your computer called **"OpenGl"** and extract these two folders (**"include"** and **"lib-mingw"**) into it  
 5. rename **"lib-mingw"** to **"lib"**  
 6. int **"OpenGl"** folder, create a C file named **"main.c"** and paste the [example code](https://www.glfw.org/documentation) into it  
