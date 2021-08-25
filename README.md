@@ -1,10 +1,14 @@
 build command: 
 ```
-gcc main.c -o main.exe -I "include" -L "lib" -lglfw3 -lglfw3dll -lopengl32 -lgdi32
-```
-
-How to reproduce this repo:
-
+gcc -D GLEW_STATIC main.c -o main.exe -I "include" -L "lib" -lglfw3 -lglfw3dll -lopengl32 -lgdi32 -lUser32 -lShell32 -lglew32s -lglu32 -lkernel32 -lOpengl32
+```  
+or simply: ```make``` if you have GnuWin32 "make". 
+you case you don't, it can be downloaded at https://sourceforge.net/projects/gnuwin32/files/make/3.81/make-3.81.exe/download?use_mirror=iWeb&download=. Install it, and then add the bin directory from the installation folder to your PATH environment variables.  
+  
+Read "build commands" for more information  
+  
+How to reproduce this repo:  
+  
 1 - download and install mingw64 and run in cmd ```gcc --version``` to see if it is working properly  
 2 - download GLFW 32-bit Windows pre-compiled binaries from https://www.glfw.org/download.html  
 3 - in the .zip file are found the "include" and "lib-mingw" folders. Inside "include" are the header files, and inside "lib-mingw" are the dll and lib files that need to be specified in the command line  

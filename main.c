@@ -1,37 +1,46 @@
-#include <GLFW/glfw3.h>
+#include <GL\glew.h>
+#include <GLFW\glfw3.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-int main(void)
-{
-    GLFWwindow* window;
+int main(int argv, const char* argc[]){
 
-    /* Initialize the library */
-    if (!glfwInit())
-        return -1;
+	GLFWwindow* window;
 
-    /* Create a windowed mode window and its OpenGL context */
-    window = glfwCreateWindow(640, 480, "Hello World", NULL, NULL);
-    if (!window)
-    {
-        glfwTerminate();
-        return -1;
-    }
+	if(!glfwInit()){
+		printf("[!] error: nao foi possivel iniciar o GLFW3.\n");
+	}
 
-    /* Make the window's context current */
-    glfwMakeContextCurrent(window);
+	window = glfwCreateWindow(640, 480, "Triangle", NULL, NULL);
 
-    /* Loop until the user closes the window */
-    while (!glfwWindowShouldClose(window))
-    {
-        /* Render here */
-        glClear(GL_COLOR_BUFFER_BIT);
+	if(!window){
+		glfwTerminate();
+		printf("[!] error: nao foi possivel criar a janela.\n");
+		return -1;
+	}
 
-        /* Swap front and back buffers */
-        glfwSwapBuffers(window);
+	glfwMakeContextCurrent(window);
 
-        /* Poll for and process events */
-        glfwPollEvents();
-    }
+	if(glewInit() == GLEW_OK){
+		printf("[!] error: nao foi possivel iniciar o GLEW.\n");
+	}
 
-    glfwTerminate();
-    return 0;
+	while(!glfwWindowShouldClose(window)){
+		glClear(GL_COLOR_BUFFER_BIT);
+
+		//render here
+		glBegin(GL_TRIANGLES);
+		glVertex2f(-0.5f, -0.5f);
+		glVertex2f(0.5f,  -0.5f);
+		glVertex2f(0.0f,   0.5f);
+		glEnd();
+        //until here
+
+		glfwSwapBuffers(window);
+
+		glfwPollEvents();		
+	}
+
+	glfwTerminate();
+	return 0;
 }

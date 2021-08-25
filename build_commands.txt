@@ -1,0 +1,10 @@
+==========PORTUGUêS==================================
+Troque esses comandos no makefile de forma conveniente
+
+#Funciona com o glew32.lib, mas é necessário que o arquivo glew32.dll (encontrado neste diretório) esteja na mesma pasta do executável (glew32s.lib pode ser apagado da pasta dependencies)
+gcc main.c -o ../main.exe -I "../dependencies/include" -L "../dependencies/lib" -lglfw3 -lglfw3dll -lopengl32 -lgdi32 -lUser32 -lShell32 -lglew32 -lglu32 -lkernel32
+
+#Funciona com o glew32s.lib e não necessita o glew32.dll na pasta do executável (glew32.lib e glew32.dll podem ser apagados da pasta dependencies)
+gcc -D GLEW_STATIC main.c -o ../main.exe -I "../dependencies/include" -L "../dependencies/lib" -lglfw3 -lglfw3dll -lopengl32 -lgdi32 -lUser32 -lShell32 -lglew32s -lglu32 -lkernel32 -lOpengl32
+
+==========ENGLISH====================================
