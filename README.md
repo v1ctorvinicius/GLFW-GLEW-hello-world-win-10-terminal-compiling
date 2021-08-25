@@ -12,4 +12,4 @@ How to reproduce this repo:
 5 - rename "lib-mingw" to lib  
 6 - create a C file named "main.c" and paste the example code in https://www.glfw.org/documentation into it  
 7 - open the windows terminal inside this folder and run ```gcc main.c -o main.exe -I "include" -L "lib" -lglfw3 -lglfw3dll -lopengl32 -lgdi32```  
-8 - you're done, run "main.exe" to see it working.[GitHub](http://github.com)
+8 - you're done, run "main.exe" to see a window popping up on your screen 🧐🤘.
