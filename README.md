@@ -2,7 +2,7 @@ build command:
 ```
 gcc -D GLEW_STATIC main.c -o main.exe -I "include" -L "lib" -lglfw3 -lglfw3dll -lopengl32 -lgdi32 -lUser32 -lShell32 -lglew32s -lglu32 -lkernel32 -lOpengl32
 ```  
-or simply: ```make``` if you have GnuWin32 "make". 
+or simply ```make``` if you have GnuWin32 "make". 
 you case you don't, it can be downloaded at [here](https://sourceforge.net/projects/gnuwin32/files/make/3.81/make-3.81.exe/download?use_mirror=iWeb&download=). Install it, and then add the bin folder from where you installed it to your PATH environment variables.  
   
 Read "build commands" for more information  
