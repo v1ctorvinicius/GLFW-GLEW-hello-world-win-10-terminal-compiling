@@ -1,10 +1,10 @@
-#GLFW AND GLEW SETUP FOR TERMINAL BUILDING OPENGL APPLICATIONS
+# GLFW AND GLEW SETUP FOR TERMINAL BUILDING OPENGL APPLICATIONS
 
 you can just run **main.exe** to test the repo and see it working:
 
 ![traingle](https://github.com/v1ctor13/GLFW-GLEW-hello-world-win-10-terminal-compiling/blob/master/triangle.jpg)
 
-##build command: 
+## build command: 
 ```
 gcc -D GLEW_STATIC main.c -o main.exe -I "include" -L "lib" -lglfw3 -lglfw3dll -lopengl32 -lgdi32 -lUser32 -lShell32 -lglew32s -lglu32 -lkernel32 -lOpengl32
 ```  
@@ -13,7 +13,7 @@ you case you don't, it can be downloaded at [here](https://sourceforge.net/proje
   
 Read "build commands" for more information  
   
-##How to reproduce this repo:  
+## How to reproduce this repo:  
   
 1. download and install mingw64 and run in terminal ```gcc --version``` to see if it is working properly  
 2. download GLFW 32-bit Windows pre-compiled binaries from [glfw download page](https://www.glfw.org/download.html)  
