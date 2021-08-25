@@ -21,7 +21,7 @@ int main(int argv, const char* argc[]){
 
 	glfwMakeContextCurrent(window);
 
-	if(glewInit() == GLEW_OK){
+	if(glewInit() != GLEW_OK){
 		printf("[!] error: nao foi possivel iniciar o GLEW.\n");
 	}
 
