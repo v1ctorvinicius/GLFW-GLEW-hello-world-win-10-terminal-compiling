@@ -1,3 +1,5 @@
+![traingle](https://github.com/v1ctor13/GLFW-GLEW-hello-world-win-10-terminal-compiling/blob/master/triangle.jpg)
+
 build command: 
 ```
 gcc -D GLEW_STATIC main.c -o main.exe -I "include" -L "lib" -lglfw3 -lglfw3dll -lopengl32 -lgdi32 -lUser32 -lShell32 -lglew32s -lglu32 -lkernel32 -lOpengl32
