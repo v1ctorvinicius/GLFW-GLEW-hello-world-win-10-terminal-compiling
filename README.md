@@ -1,4 +1,7 @@
-build command: '''gcc main.c -o main.exe -I "include" -L "lib" -lglfw3 -lglfw3dll -lopengl32 -lgdi32'''
+build command: 
+'''
+gcc main.c -o main.exe -I "include" -L "lib" -lglfw3 -lglfw3dll -lopengl32 -lgdi32
+'''
 
 How to reproduce this repo:
 
