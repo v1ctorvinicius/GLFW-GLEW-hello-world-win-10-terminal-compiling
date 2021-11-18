@@ -37,7 +37,7 @@ glfwMakeContextCurrent(window);
 16. below this line just copy and paste this:
 ```c
 if(glewInit() != GLEW_OK){
-  printf("[!] error: GLEW couldn't be initiated.\n");
+  printf("[!] error: GLEW couldn't be initialized.\n");
 }
 ```
 17. now Glew must initiate with no errors, go to the terminal and compile with:   
