@@ -11,7 +11,7 @@ gcc -D GLEW_STATIC main.c -o main.exe -I "include" -L "lib" -lglfw3 -lglfw3dll -
 or simply ```make``` if you have GnuWin32 "make". 
 in case you don't, it can be downloaded [here](https://sourceforge.net/projects/gnuwin32/files/make/3.81/make-3.81.exe/download?use_mirror=iWeb&download=). Install it, and then add the bin folder from where you installed it to your PATH environment variables.  
   
-Read "build commands" for more information  
+Read "build commands.txt" for more information  
   
 ## How to reproduce this repo:  
   
