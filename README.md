@@ -34,7 +34,7 @@ Read "build commands.txt" for more information
 ```c
 glfwMakeContextCurrent(window);
 ```  
-16. below this line just copy and paste this:
+16. below this line, just copy and paste this:
 ```c
 if(glewInit() != GLEW_OK){
   printf("[!] error: GLEW couldn't be initialized.\n");
