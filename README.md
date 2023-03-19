@@ -57,4 +57,4 @@ glVertex2f(0.5f,  -0.5f);
 glVertex2f(0.0f,   0.5f);
 glEnd();
 ```
-22. you're done, compile with the command line in step 17 and run "main.exe" to see a nice window and triangle popping up on your screen 🧐🤘.
+22. you're done. Compile with the command line in step 17 and run "main.exe" to see a nice window and triangle popping up on your screen 🧐🤘.
